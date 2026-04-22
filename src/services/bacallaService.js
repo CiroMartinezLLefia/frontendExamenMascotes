@@ -11,7 +11,7 @@ function toResourceId(id) {
 }
 
 function getVarietatPath(id) {
-  return `${API_PATHS.bacalla}/${encodeURIComponent(toResourceId(id))}`;
+  return `${API_PATHS.mascotes}/${encodeURIComponent(toResourceId(id))}`;
 }
 
 function normalizeVarietat(item) {
@@ -70,7 +70,7 @@ function createHttpError(response, payload) {
 
 export async function getVarietats() {
   // Fem no-store per veure al moment les altes noves que arriben del backend.
-  const response = await fetch(buildApiUrl(API_PATHS.bacalla), {
+  const response = await fetch(buildApiUrl(API_PATHS.mascotes), {
     cache: "no-store",
   });
   const payload = await parseJsonSafely(response);
@@ -149,7 +149,7 @@ export async function deleteVarietat(id) {
 }
 
 export async function createVarietat(newVarietat) {
-  const response = await fetch(buildApiUrl(API_PATHS.bacalla), {
+  const response = await fetch(buildApiUrl(API_PATHS.mascotes), {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

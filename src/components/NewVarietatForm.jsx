@@ -103,7 +103,7 @@ export default function NewVarietatForm({
             name="nombre"
             value={formData.nombre}
             onChange={onChange}
-            placeholder="Ex: Bacalla d'Islàndia"
+            placeholder="Ex: Jonathan"
             required
           />
         </div>
@@ -115,19 +115,19 @@ export default function NewVarietatForm({
             name="raza"
             value={formData.raza}
             onChange={onChange}
-            placeholder="Ex: Atlantica nord"
+            placeholder="Ex: Perraco"
             required
           />
         </div>
 
         <div className="field">
-          <label htmlFor="tipus">Tipo</label>
+          <label htmlFor="tipo">Tipo</label>
           <input
             id="tipo"
             name="tipo"
             value={formData.tipo}
             onChange={onChange}
-            placeholder="Ex: salat, esqueixat, fresc"
+            placeholder="Ex: gato, perro, gato, pollo..."
             required
           />
         </div>
@@ -140,7 +140,7 @@ export default function NewVarietatForm({
             value={formData.foto}
             onChange={onChange}
             rows={4}
-            placeholder="Una o dues frases sobre el producte."
+            placeholder="URL"
             required
           />
         </div>
@@ -153,7 +153,7 @@ export default function NewVarietatForm({
                 : "Enviant..."
               : isEditMode
                 ? "Guardar canvis"
-                : "Crear varietat"}
+                : "Crear mascota"}
           </button>
 
           <button
