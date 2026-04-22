@@ -15,8 +15,8 @@ export default async function HomePage() {
   return (
     <section>
       <div className="hero">
-        <p className="eyebrow">Cataleg de bacalla</p>
-        <h1>Varietats i presentacions comercials</h1>
+        <p className="eyebrow">Cataleg de mascotes</p>
+        <h1>Mascotes i tal</h1>
         <p>
           Consulta llistat, detall i afegeix noves fitxes connectant amb la teva
           API Express.
