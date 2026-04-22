@@ -18,9 +18,9 @@ function normalizeVarietat(item) {
   return {
     id: String(item?.id ?? ""),
     nombre: item?.nombre ?? "Sense nom",
-    tipo: item?.nombre ?? "Sense tipo",
-    raza: item?.nombre ?? "Sense raza",
-    foto: item?.nombre ?? "Sense foto",
+    tipo: item?.tipo ?? "Sense tipo",
+    raza: item?.raza ?? "Sense raza",
+    foto: item?.foto ?? "Sense foto",
   };
 }
 
