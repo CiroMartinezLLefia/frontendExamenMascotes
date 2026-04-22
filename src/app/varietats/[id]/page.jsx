@@ -47,7 +47,7 @@ export default async function VarietatDetailPage({ params }) {
         </div>
 
         <div className="detail-block">
-          <p>{item.foto}</p>
+          <img src="item.foto" alt="foto" />
         </div>
 
         <div className="detail-block">
