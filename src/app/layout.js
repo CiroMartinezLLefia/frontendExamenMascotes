@@ -14,8 +14,8 @@ const headingFont = Playfair_Display({
 });
 
 export const metadata = {
-  title: "BacaLab Frontend",
-  description: "Cataleg de varietats i presentacions de bacalla",
+  title: "MASCOTES Frontend",
+  description: "Cataleg de mascotes",
 };
 
 export default function RootLayout({ children }) {
@@ -33,7 +33,7 @@ export default function RootLayout({ children }) {
             </Link>
 
             <nav className="nav-links" aria-label="Navegacio principal">
-              <Link href="/">Varietats</Link>
+              <Link href="/">MASCOTES</Link>
               <Link href="/nou">Afegir nova</Link>
             </nav>
           </header>

@@ -149,7 +149,7 @@ export async function deleteVarietat(id) {
 }
 
 export async function createVarietat(newVarietat) {
-  const response = await fetch(buildApiUrl(API_PATHS.mascotes), {
+  const response = await fetch(buildApiUrl(API_PATHS.mascotesvarietats), {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
