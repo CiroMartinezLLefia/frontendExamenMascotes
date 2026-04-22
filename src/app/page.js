@@ -40,11 +40,11 @@ export default async function HomePage() {
         <div className="cards-grid">
           {varietats.map((item) => (
             <article className="card" key={item.id}>
-              <span className="pill">{item.tipus}</span>
-              <h2>{item.nom}</h2>
-              <p>{item.descripcio}</p>
+              <span className="pill">{item.tipo}</span>
+              <h2>{item.nombre}</h2>
+              <p>{item.tipo}</p>
               <footer>
-                <span>{item.origen}</span>
+                <span>{item.raza}</span>
                 <Link href={`/varietats/${item.id}`}>Veure detall</Link>
               </footer>
             </article>

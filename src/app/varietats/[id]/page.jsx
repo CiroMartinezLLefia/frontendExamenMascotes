@@ -37,18 +37,17 @@ export default async function VarietatDetailPage({ params }) {
   return (
     <section className="detail-panel">
       <p className="eyebrow">Fitxa detallada</p>
-      <h1>{item.nom}</h1>
-      <p className="detail-description">{item.descripcio}</p>
+      <h1>{item.nombre}</h1>
+      <p className="detail-description">{item.tipo}</p>
 
       <div className="detail-grid">
         <div className="detail-block">
-          <h2>Origen o regio</h2>
-          <p>{item.origen}</p>
+          <h2>Raza</h2>
+          <p>{item.raza}</p>
         </div>
 
         <div className="detail-block">
-          <h2>Tipus de presentacio</h2>
-          <p>{item.tipus}</p>
+          <p>{item.foto}</p>
         </div>
 
         <div className="detail-block">

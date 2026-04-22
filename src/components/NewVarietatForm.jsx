@@ -5,18 +5,18 @@ import Link from "next/link";
 import { createVarietat, updateVarietat } from "@/services/bacallaService";
 
 const initialForm = {
-  nom: "",
-  origen: "",
-  tipus: "",
-  descripcio: "",
+  nombre: "",
+  tipo: "",
+  raza: "",
+  foto: "",
 };
 
 function normalizeFormData(data) {
   return {
-    nom: data?.nom ?? "",
-    origen: data?.origen ?? "",
-    tipus: data?.tipus ?? "",
-    descripcio: data?.descripcio ?? "",
+    nombre: data?.nombre ?? "",
+    tipo: data?.tipo ?? "",
+    raza: data?.raza ?? "",
+    foto: data?.foto ?? "",
   };
 }
 
@@ -97,11 +97,11 @@ export default function NewVarietatForm({
     <section className="form-panel">
       <form className="form-grid" onSubmit={onSubmit}>
         <div className="field">
-          <label htmlFor="nom">Nom</label>
+          <label htmlFor="nombre">Nombre</label>
           <input
-            id="nom"
-            name="nom"
-            value={formData.nom}
+            id="nombre"
+            name="nombre"
+            value={formData.nombre}
             onChange={onChange}
             placeholder="Ex: Bacalla d'Islàndia"
             required
@@ -109,11 +109,11 @@ export default function NewVarietatForm({
         </div>
 
         <div className="field">
-          <label htmlFor="origen">Origen o regio</label>
+          <label htmlFor="raza">Raza</label>
           <input
-            id="origen"
-            name="origen"
-            value={formData.origen}
+            id="raza"
+            name="raza"
+            value={formData.raza}
             onChange={onChange}
             placeholder="Ex: Atlantica nord"
             required
@@ -121,11 +121,11 @@ export default function NewVarietatForm({
         </div>
 
         <div className="field">
-          <label htmlFor="tipus">Tipus de presentacio</label>
+          <label htmlFor="tipus">Tipo</label>
           <input
-            id="tipus"
-            name="tipus"
-            value={formData.tipus}
+            id="tipo"
+            name="tipo"
+            value={formData.tipo}
             onChange={onChange}
             placeholder="Ex: salat, esqueixat, fresc"
             required
@@ -133,11 +133,11 @@ export default function NewVarietatForm({
         </div>
 
         <div className="field field--full">
-          <label htmlFor="descripcio">Descripcio curta</label>
+          <label htmlFor="descripcio">FotoURL</label>
           <textarea
             id="descripcio"
             name="descripcio"
-            value={formData.descripcio}
+            value={formData.foto}
             onChange={onChange}
             rows={4}
             placeholder="Una o dues frases sobre el producte."

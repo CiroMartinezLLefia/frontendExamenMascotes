@@ -16,15 +16,11 @@ function getVarietatPath(id) {
 
 function normalizeVarietat(item) {
   return {
-    id: String(item?.id ?? item?._id ?? ""),
-    nom: item?.nom ?? item?.name ?? item?.producte ?? "Sense nom",
-    origen: item?.origen ?? item?.regio ?? item?.region ?? "Origen no indicat",
-    tipus: item?.tipus ?? item?.presentacio ?? item?.forma ?? "Tipus no indicat",
-    descripcio:
-      item?.descripcio ??
-      item?.descripcion ??
-      item?.description ??
-      "Sense descripcio disponible.",
+    id: String(item?.id ?? ""),
+    nombre: item?.nombre ?? "Sense nom",
+    tipo: item?.nombre ?? "Sense tipo",
+    raza: item?.nombre ?? "Sense raza",
+    foto: item?.nombre ?? "Sense foto",
   };
 }
 

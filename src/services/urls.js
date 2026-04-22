@@ -1,6 +1,6 @@
 // Centralitza l'arrel de l'API i els paths per evitar URLs en dur al codi.
 export const API_PATHS = {
-  bacalla: "/api/bacalla",
+  mascotes: "/api/mascotes",
 };
 
 export function getApiBaseUrl() {
