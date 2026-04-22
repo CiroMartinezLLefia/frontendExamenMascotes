@@ -16,7 +16,7 @@ function getVarietatPath(id) {
 
 function normalizeVarietat(item) {
   return {
-    id: String(item?.id ?? ""),
+    id: String(item?.id ?? item?._id ?? ""),
     nombre: item?.nombre ?? "Sense nom",
     tipo: item?.tipo ?? "Sense tipo",
     raza: item?.raza ?? "Sense raza",
