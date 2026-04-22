@@ -133,10 +133,10 @@ export default function NewVarietatForm({
         </div>
 
         <div className="field field--full">
-          <label htmlFor="descripcio">FotoURL</label>
+          <label htmlFor="foto">FotoURL</label>
           <textarea
-            id="descripcio"
-            name="descripcio"
+            id="foto"
+            name="foto"
             value={formData.foto}
             onChange={onChange}
             rows={4}
